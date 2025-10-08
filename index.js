@@ -31,12 +31,12 @@ app.get('/', (req, res) => {
 });
 
 // Using prefixed routes
-app.use("/api/", EducationRoutes);
-app.use("/api/", projectRoutes);
-app.use("/api/", SocialMediaLinksRoutes);
-app.use("/api/", personalDetailsRoutes);
-app.use("/api/", ResumeRoutes);
-app.use("/api/", certificateRoutes);
+app.use("/", EducationRoutes);
+app.use("/", projectRoutes);
+app.use("/", SocialMediaLinksRoutes);
+app.use("/", personalDetailsRoutes);
+app.use("/", ResumeRoutes);
+app.use("/", certificateRoutes);
 
 // Set the port from environment variables or default to 5000
 const PORT = process.env.PORT || 7777;
